@@ -50,7 +50,7 @@ function App() {
   return (
     <div className="App">
       <p>
-        Moving across {target ? <p>{target}</p> : <p>...</p>}<p/>
+        Current target: {target ? <p>{target}</p> : <p>...</p>}<p/>
       </p>
       <SVGMap map={map} mapStyle={mapStyle} onPathMouseOver={mouseOver} onPathMouseMove={mouseMove} onPathMouseOut={onMouseOut}/>
     </div>
